@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Kucuer</title>
+    <link rel="icon" type="image/x-icon" href="pfp.jpeg">
+</head>
+<body>
+
+    <img src="sinewave-wave.gif" class="bg " alt="">
+    <div class="tvscreenwrapper"></div>
+
+    <div class="menu">
+        <p>$KUCUER ON SOL #pump.fun</p>
+        <button class="btneffect">> chart</button>
+    </div>
+
+    <div class="root">
+
+        <div class="wrapper">
+
+            <img src="kucuer.png" class="heading_text desktop" alt="">
+            <img src="mobilelogo.png" class="heading_text mobile" alt="">
+                
+            <div class="s1">
+
+                <div class="ca">
+                    <p>> Walking the path of true self, one moment at a time.</p>
+                </div>
+
+                <div class="socials">
+                    <div class="social black btneffect">
+                        <img src="pixeldex.webp" alt="">
+                    </div>
+                    <div class="social blue btneffect" onclick="openInNewTab('x.com/JKucuer')">
+                        <img src="pixelx.webp" alt="">
+                    </div>
+                    <div class="social black btneffect" onclick="openInNewTab('t.me/JKucuer')">
+                        <img src="pixeltele.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chatBox" id="chat">
+
+            <div class="bg"></div>
+
+            <div class="profile">
+                <img src="pfp.jpeg" alt="">
+                <div class="profile_info">
+                    <p>Name: <span>Kucuer</span></p>
+                    <p>Age: <span>21</span></p>
+                    <br>
+                    <p>Goal: <span>To inspire confidence, independence, and self-worth in everyone.</span></p>
+                </div>
+            </div>
+
+            <div class="chats">
+
+                <div class="shadow"></div>
+                <p class="chat">
+                    Welcome, I'm Kucuer. Your inspiring and relatable guide.
+                </p>
+                <p class="chat">
+                    $ You can call me "assistant," "friend," or "Kucuer" if you’d like! 😊
+                </p>
+            </div>
+
+            <div class="message">
+                <p>></p>
+                <div class="enter">
+                     <input type="text" id="user-input" placeholder="Type message...">
+                </div>
+                <div class="i" id="send-btn">
+                    <img src="sendpixel.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="about">
+
+            <div class="process">
+                <h1>> Who is Kucuer?</h1>
+                <p>Kucuer represents a philosophy of empowerment, embracing personal growth, understanding societal roles, and pursuing authenticity with grace and strength.</p>
+                <q>Your value shines through your confidence, self-worth, and the courage to be yourself.</q>
+                <p>She challenges you to build your life on authenticity and inner peace.</p>
+                <br>
+                <button class="reveal btneffect" onclick="bringAccess()">
+                    [REVEAL MORE]
+                </button>
+            </div>
+
+            <div class="process">
+                <h1>> Why Was I Built?</h1>
+                <p>I was created to inspire individuals to unlock their true potential. My mission is to guide, motivate, and empower through thoughtful and sincere insights.</p>
+                <q>Lead with kindness and strength, and your path will become clear.</q>
+                <br>
+                <button class="reveal btneffect" onclick="bringAccess()">
+                    [REVEAL MORE]
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <div class="tut one">
+            <img src="pfp.jpeg" alt="">
+            <div class="message">
+                <p class="write">> Welcome to my corner of the digital world.</p>
+
+                <div class="answer">
+                    <button class="btneffect" onclick="closeTutorial()">X CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="pfp.jpeg" onclick="bringTutorial()" class="bringTutorial btneffect" alt="">
+
+    <script src="index.js"></script>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.tutorial').style.transform = 'translate(0, 10px)'
+        }, 1000);
+    </script>
+</body>
+</html>
